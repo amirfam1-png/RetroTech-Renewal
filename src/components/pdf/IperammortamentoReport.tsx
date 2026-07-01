@@ -14,31 +14,7 @@ import type { Site } from '@/types';
 
 // Register IBM Plex from Google Fonts CDN. This matches the dashboard
 // typography so the PDF and the app feel like the same product.
-Font.register({
-  family: 'IBM Plex Sans',
-  fonts: [
-    { src: 'https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKjbLeEKxc.ttf', fontWeight: 400 },
-    { src: 'https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIxBdHE.ttf', fontWeight: 500 },
-    { src: 'https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjQ76M4xBdHE.ttf', fontWeight: 600 },
-    { src: 'https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjQ76P4xBdHE.ttf', fontWeight: 700 },
-  ],
-});
 
-Font.register({
-  family: 'IBM Plex Mono',
-  fonts: [
-    { src: 'https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n3kwq0g.ttf', fontWeight: 400 },
-    { src: 'https://fonts.gstatic.com/s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n5igg1l9kn-s.ttf', fontWeight: 500 },
-  ],
-});
-
-Font.register({
-  family: 'IBM Plex Serif',
-  fonts: [
-    { src: 'https://fonts.gstatic.com/s/ibmplexserif/v19/jizDREVNn1dOx-zrZ2X3pZvkThUY0TY7ikbI.ttf', fontWeight: 500 },
-    { src: 'https://fonts.gstatic.com/s/ibmplexserif/v19/jizDREVNn1dOx-zrZ2X3pZvkThUY0TY-ikbI.ttf', fontWeight: 600 },
-  ],
-});
 
 const C = {
   ink: '#1a2530',
@@ -56,7 +32,7 @@ const C = {
 
 const styles = StyleSheet.create({
   page: {
-    fontFamily: 'IBM Plex Sans',
+    fontFamily: 'Helvetica',
     fontSize: 10,
     color: C.ink,
     paddingTop: 50,
@@ -86,19 +62,19 @@ const styles = StyleSheet.create({
     color: '#1a2530',
     textAlign: 'center',
     fontSize: 11,
-    fontFamily: 'IBM Plex Mono',
+    fontFamily: 'Courier',
     fontWeight: 700,
     paddingTop: 2,
   },
   headerName: {
-    fontFamily: 'IBM Plex Serif',
+    fontFamily: 'Times-Roman',
     fontWeight: 600,
     fontSize: 12,
     color: C.ink,
   },
   headerName_brand: { color: C.brandRust },
   headerMeta: {
-    fontFamily: 'IBM Plex Mono',
+    fontFamily: 'Courier',
     fontSize: 9,
     color: C.inkMuted,
   },
@@ -130,7 +106,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   coverTitle: {
-    fontFamily: 'IBM Plex Serif',
+    fontFamily: 'Times-Roman',
     fontWeight: 600,
     fontSize: 36,
     color: C.ink,
@@ -172,7 +148,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: 500,
     color: C.ink,
-    fontFamily: 'IBM Plex Mono',
+    fontFamily: 'Courier',
   },
   coverSeal: {
     marginTop: 30,
@@ -183,7 +159,7 @@ const styles = StyleSheet.create({
     borderLeftStyle: 'solid',
   },
   coverSealTitle: {
-    fontFamily: 'IBM Plex Serif',
+    fontFamily: 'Times-Roman',
     fontWeight: 600,
     fontSize: 14,
     color: C.ok,
@@ -204,7 +180,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   sectionTitle: {
-    fontFamily: 'IBM Plex Serif',
+    fontFamily: 'Times-Roman',
     fontWeight: 600,
     fontSize: 20,
     color: C.ink,
@@ -243,7 +219,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   kpiCardValue: {
-    fontFamily: 'IBM Plex Serif',
+    fontFamily: 'Times-Roman',
     fontWeight: 600,
     fontSize: 20,
     color: C.ink,
@@ -283,8 +259,8 @@ const styles = StyleSheet.create({
   },
   cellMachine: { flex: 3 },
   cellDept: { flex: 2, color: C.inkSecondary },
-  cellNum: { flex: 1.2, textAlign: 'right', fontFamily: 'IBM Plex Mono' },
-  cellPct: { flex: 1, textAlign: 'right', fontFamily: 'IBM Plex Mono', fontWeight: 500 },
+  cellNum: { flex: 1.2, textAlign: 'right', fontFamily: 'Courier' },
+  cellPct: { flex: 1, textAlign: 'right', fontFamily: 'Courier', fontWeight: 500 },
   pctOk: { color: C.ok },
   pctWarn: { color: C.warn },
   calloutBox: {
@@ -319,7 +295,7 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     fontSize: 8,
     fontWeight: 600,
-    fontFamily: 'IBM Plex Mono',
+    fontFamily: 'Courier',
   },
   aiText: {
     fontSize: 9,
