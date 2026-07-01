@@ -8,13 +8,8 @@ import {
   Text,
   View,
   StyleSheet,
-  Font,
 } from '@react-pdf/renderer';
 import type { Site } from '@/types';
-
-// Register IBM Plex from Google Fonts CDN. This matches the dashboard
-// typography so the PDF and the app feel like the same product.
-
 
 const C = {
   ink: '#1a2530',
